@@ -63,3 +63,5 @@ goto tomcat home directory and Add below users to conf/tomcat-user.xml file
    ```
 1. Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
 
+1. Configure Maven Project Deploy on Tomcat Server
+	webapp/target/webapp.war
