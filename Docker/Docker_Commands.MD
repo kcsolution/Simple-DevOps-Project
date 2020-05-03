@@ -65,16 +65,18 @@ docker rm <container_id>
 ```sh
 docker exec -it <container_Name> /bin/bash
 ```
-13 . Alterar o hone do Tomcat no container
-[root@docker-server ~]# docker exec -it tomcat-container /bin/bash
-root@004482c1f7b1:/usr/local/tomcat# ls
-BUILDING.txt  CONTRIBUTING.md  LICENSE  NOTICE  README.md  RELEASE-NOTES  RUNNING.txt  bin  conf  include  lib  logs  native-jni-lib  temp  webapps  webapps.dist  work
-root@004482c1f7b1:/usr/local/tomcat# cd webapps
-root@004482c1f7b1:/usr/local/tomcat/webapps# cd ..
-root@004482c1f7b1:/usr/local/tomcat# cd webapps.dist/
-root@004482c1f7b1:/usr/local/tomcat/webapps.dist# ls
-ROOT  docs  examples  host-manager  manager
-root@004482c1f7b1:/usr/local/tomcat/webapps.dist# cp -R * ../webapps
-root@004482c1f7b1:/usr/local/tomcat/webapps.dist# ls
-ROOT  docs  examples  host-manager  manager
-root@004482c1f7b1:/usr/local/tomcat/webapps.dist#
+13. Alterar o hone do Tomcat no container
+ 
+```
+ [root@docker-server ~]# docker exec -it tomcat-container /bin/bash
+  root@004482c1f7b1:/usr/local/tomcat# ls
+  BUILDING.txt  CONTRIBUTING.md  LICENSE  NOTICE  README.md  RELEASE-NOTES  RUNNING.txt  bin  conf  include  lib  logs  native-jni-lib     temp  webapps  webapps.dist  work
+  root@004482c1f7b1:/usr/local/tomcat# cd webapps
+  root@004482c1f7b1:/usr/local/tomcat/webapps# cd ..
+  root@004482c1f7b1:/usr/local/tomcat# cd webapps.dist/
+  root@004482c1f7b1:/usr/local/tomcat/webapps.dist# ls
+  ROOT  docs  examples  host-manager  manager
+  root@004482c1f7b1:/usr/local/tomcat/webapps.dist# cp -R * ../webapps
+  root@004482c1f7b1:/usr/local/tomcat/webapps.dist# ls
+  ROOT  docs  examples  host-manager  manager
+  root@004482c1f7b1:/usr/local/tomcat/webapps.dist#
