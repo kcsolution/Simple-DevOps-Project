@@ -80,3 +80,16 @@ docker exec -it <container_Name> /bin/bash
   root@004482c1f7b1:/usr/local/tomcat/webapps.dist# ls
   ROOT  docs  examples  host-manager  manager
   root@004482c1f7b1:/usr/local/tomcat/webapps.dist#
+
+14. Copiar arquivo de dentro do Container (cópia de arquivos para restabelecer pagina principal do Tomcat)
+```
+  [dockeradmin@docker-server ~]$ cat Dockerfile
+  FROM tomcat:latest
+
+  MAINTAINER AR Kleber
+
+  COPY ./webapp.war /usr/local/tomcat/webapps
+
+  ADD .  /usr/local/tomcat/webapps.dist
+  WORKDIR  /usr/local/tomcat/webapps.dist
+  RUN cp -R *  ../webapps
