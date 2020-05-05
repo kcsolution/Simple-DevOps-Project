@@ -55,16 +55,19 @@ docker stop <container_id>
 ```sh
 docker start <container_id>
 ```
-11. Remove a container
+11. Remove a container e imagens
 
 ```sh
 docker rm <container_id>
 
-Remove:
+Remove container:
 
  docker stop $(docker ps -a -q)
  docker rm $(docker ps -a -q)
 
+Remove all images
+ docker rmi $(docker images)
+ 
 --Removing Volumes
 Remove one or more specific volumes - Docker 1.9 and later
 Use the docker volume ls command to locate the volume name or names you wish to delete. Then you can remove one or more volumes with the docker volume rm command:
