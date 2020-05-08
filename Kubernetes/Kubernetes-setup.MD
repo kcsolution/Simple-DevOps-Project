@@ -100,4 +100,7 @@
        # The access key for your AWS account.
       $ export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
        # The secret access key for your AWS account.
+       
+      $ export AWS_DEFAULT_REGION=us-east-1
+         ---us-east-1
    ```
