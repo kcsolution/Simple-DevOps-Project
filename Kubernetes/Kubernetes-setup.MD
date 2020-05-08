@@ -95,9 +95,9 @@
    ```
 1. Configure AWS Using Credentials from Environment Variables
    ```sh
-     # sudo vi ~/.bash_profile 
-     # $ export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+      # sudo vi ~/.bash_profile 
+      $ export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
        # The access key for your AWS account.
-     $ export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+      $ export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
        # The secret access key for your AWS account.
    ```
